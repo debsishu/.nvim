@@ -1,0 +1,23 @@
+{
+  "Python Base Class": {
+    "prefix": "pbc",
+    "body": [
+      "class ${1:Name}Base(BaseModel):",
+      "\t${2:fields}",
+      "",
+      "",
+      "class ${1}Create(${1}Base):",
+      "\tpass",
+      "",
+      "",
+      "class ${1}(${1}Base):",
+      "\tid: int",
+      "",
+      "\tclass Config:",
+      "\t\torm_mode = True",
+      "",
+      ""
+    ],
+    "description": "Python base class with config for ${1:Name}"
+  }
+}
