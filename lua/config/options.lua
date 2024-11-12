@@ -4,4 +4,6 @@
 
 local opt = vim.opt
 
+-- vim.o.colorcolumn = "120"
 opt.clipboard = ""
+vim.g.autoformat = false
